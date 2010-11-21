@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 def inputARP():
     pSrcAddr = raw_input("Input the source IP address ")
     pDstAddr = raw_input("Input the destination IP address ")

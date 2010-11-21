@@ -53,6 +53,8 @@ def sendDNS(n, ch, hName, dName, ip, pTimeout):
 			a = r.req()
 	elif ch == 4:
 		r = DNS.Request(qtype = 'srv', timeout = pTimeout).req(dName)
+		for i in range(n):
+			a = r.req()
 #	elif ch == 5:
 #		for i in range(n):
 #			name = dns.reversename.from_address(ip)
